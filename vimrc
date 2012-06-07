@@ -43,6 +43,9 @@ call pathogen#infect()
 nmap <LEADER>Gs :Gstatus<CR>
 nmap <LEADER>Gc :Gcommit<CR>
 
+"Gist-Vim
+let g:gist_detect_filetype = 1
+
 "Shows line numbers in the left column
 set number
 set tabstop=4
