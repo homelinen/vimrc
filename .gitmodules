@@ -28,9 +28,6 @@
 [submodule "bundle/tagbar"]
 	path = bundle/tagbar
 	url = https://github.com/majutsushi/tagbar.git
-[submodule "bundle/simple-pairs"]
-	path = bundle/simple-pairs
-	url = https://github.com/vim-scripts/simple-pairs.git
 [submodule "bundle/auto-pairs"]
 	path = bundle/auto-pairs
 	url = https://github.com/vim-scripts/Auto-Pairs.git
