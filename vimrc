@@ -46,6 +46,12 @@ nmap <LEADER>Gc :Gcommit<CR>
 "Gist-Vim
 let g:gist_detect_filetype = 1
 
+"Tagbar
+nmap <LEADER>l :TagbarToggle<CR>
+
+"NERDTree
+nmap <LEADER>tN :NERDTree<CR>
+
 "Shows line numbers in the left column
 set number
 set tabstop=4
@@ -91,7 +97,7 @@ set statusline=%F%m%h\ %w\ \ [TYP=%Y]\ \ CWD=%{CurDir()}%h\ \ [POS=%l,%v][%p%%]\
 
 set backspace=2
 
-filetype plugin indent on
+filetype plugin on
 
 function! CurDir()
     let curdir = substitute(getcwd(), '/home/homelinen/', "~/", "g")
