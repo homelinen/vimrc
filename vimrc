@@ -16,9 +16,9 @@ set background=dark
 
 " Uncomment the following to have Vim load indentation rules and plugins
 " according to the detected filetype.
-"if has("autocmd")
-"  filetype plugin indent on
-"endif
+if has("autocmd")
+  filetype plugin indent on
+endif
 
 " The following are commented out as they cause vim to behave a lot
 " differently from regular Vi. They are highly recommended though.
@@ -52,6 +52,9 @@ nmap <LEADER>l :TagbarToggle<CR>
 "NERDTree
 nmap <LEADER>tN :NERDTree<CR>
 
+"Slime
+let g:slime_target = "tmux"
+
 "Shows line numbers in the left column
 set number
 set tabstop=4
@@ -59,8 +62,7 @@ set shiftwidth=4
 set expandtab
 set autoindent
 set smartindent
-"colors Tomorrow-Night-Bright "I deleted this theme, wups
-"
+
 imap ;; <Esc>
 
 set nobackup
@@ -74,6 +76,7 @@ set history=700
 set ai "Auto indent
 set si "Smart indent
 
+"What is you?
 set lbr
 
 set wildmenu "Turn on wildmenu
@@ -91,10 +94,10 @@ set magic
 set showmatch
 
 set showcmd "Show partial command in status line
-set number
 
 set statusline=%F%m%h\ %w\ \ [TYP=%Y]\ \ CWD=%{CurDir()}%h\ \ [POS=%l,%v][%p%%]\ \ %([%R%M]%)
 
+"What does this do?
 set backspace=2
 
 filetype plugin on
