@@ -18,12 +18,6 @@ set background=dark
 "  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 "endif
 
-" Uncomment the following to have Vim load indentation rules and plugins
-" according to the detected filetype.
-if has("autocmd")
-  filetype plugin indent on
-endif
-
 " The following are commented out as they cause vim to behave a lot
 " differently from regular Vi. They are highly recommended though.
 "set showcmd		" Show (partial) command in status line.
@@ -43,9 +37,13 @@ endif
 "Pathogen 
 call pathogen#infect()
 
-"Fugitive - Git for Vim
+" leader
+let mapleader = ","
+
+" Fugitive - Git for Vim
 nmap <LEADER>Gs :Gstatus<CR>
 nmap <LEADER>Gc :Gcommit<CR>
+nmap <leader>Gd :Gdiff<CR>
 
 "Gist-Vim
 let g:gist_detect_filetype = 1
@@ -74,12 +72,14 @@ map <leader>to :tabonly<cr>
 map <leader>tc :tabclose<cr>
 map <leader>tm :tabmove
 map <leader>t<leader> :tabnext 
+map <leader>tp :tabp
 
 " Toggle paste mode on and off
 map <leader>pp :setlocal paste!<cr>
 
 " Remove the Windows ^M - when the encodings gets messed up
 noremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
+
 "-- EOF Snippets
 
 "Shows line numbers in the left column
@@ -127,7 +127,11 @@ set statusline=%F%m%h\ %w\ \ [TYP=%Y]\ \ CWD=%{CurDir()}%h\ \ [POS=%l,%v][%p%%]\
 "What does this do?
 set backspace=2
 
-filetype plugin on
+" Uncomment the following to have Vim load indentation rules and plugins
+" according to the detected filetype.
+if has("autocmd")
+  filetype plugin indent on
+endif
 
 function! CurDir()
     let curdir = substitute(getcwd(), '/home/homelinen/', "~/", "g")
