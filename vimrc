@@ -82,6 +82,8 @@ noremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
 
 "-- EOF Snippets
 
+map <leader>tb :TagbarToggle
+
 "Shows line numbers in the left column
 set number
 set tabstop=4
