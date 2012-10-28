@@ -31,6 +31,9 @@
 [submodule "bundle/auto-pairs"]
 	path = bundle/auto-pairs
 	url = https://github.com/vim-scripts/Auto-Pairs.git
+[submodule "bundle/vim-haskell"]
+	path = bundle/vim-haskell
+	url = https://github.com/wlangstroth/vim-haskell.git
 [submodule "bundle/vim-slime"]
 	path = bundle/vim-slime
 	url = git://github.com/jpalardy/vim-slime.git
