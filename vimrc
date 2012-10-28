@@ -83,6 +83,7 @@ noremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
 "-- EOF Snippets
 
 map <leader>tb :TagbarToggle
+map YY :!xclip -f -sel clip<CR>
 
 "Shows line numbers in the left column
 set number
