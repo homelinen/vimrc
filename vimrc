@@ -144,4 +144,7 @@ endfunction
 "When vimrc is edited, reload it
 autocmd! bufwritepost vimrc source /etc/vimrc
 
-colors zenburn
+colors Tomorrow-Night-Eighties
+" If using a dark background within the editing area and syntax highlighting
+" turn on this option as well
+set background=dark
