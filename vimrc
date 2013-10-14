@@ -119,6 +119,11 @@ set incsearch
 
 syntax enable
 
+" Syntastic 
+
+" Use pyflakes for a tiny speed bump over pylint
+let g:syntastic_python_checkers = ['pyflakes']
+
 set magic
 
 set showmatch
