@@ -52,7 +52,7 @@ let g:gist_detect_filetype = 1
 nmap <LEADER>l :TagbarToggle<CR>
 
 "NERDTree
-nmap <LEADER>tN :NERDTree<CR>
+nmap <LEADER>N :NERDTree<CR>
 
 "Slime
 let g:slime_target = "tmux"
@@ -67,12 +67,12 @@ map <C-h> <C-W>h
 map <C-l> <C-W>l
 
 " Useful mappings for managing tabs
-map <leader>tn :tabnew<cr>
+map <leader>tN :tabnew<cr>
 map <leader>to :tabonly<cr>
 map <leader>tc :tabclose<cr>
-map <leader>tm :tabmove
-map <leader>t<leader> :tabnext 
-map <leader>tp :tabp
+map <leader>tm :tabmove<CR>
+map <leader>tn :tabnext<CR>
+map <leader>tp :tabp<CR>
 
 " Toggle paste mode on and off
 map <leader>pp :setlocal paste!<cr>
@@ -82,7 +82,6 @@ noremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
 
 "-- EOF Snippets
 
-map <leader>tb :TagbarToggle
 map YY :!xclip -f -sel clip<CR>
 
 "Shows line numbers in the left column
@@ -122,7 +121,7 @@ syntax enable
 " Syntastic 
 
 " Use pyflakes for a tiny speed bump over pylint
-let g:syntastic_python_checkers = ['pyflakes']
+let g:syntastic_python_checkers = ['python', 'pyflakes']
 
 set magic
 
