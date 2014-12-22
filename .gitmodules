@@ -70,3 +70,15 @@
 [submodule "bundle/surround"]
 	path = bundle/surround
 	url = git@github.com:tpope/vim-surround.git
+[submodule "bundle/YUNOcommit"]
+	path = bundle/YUNOcommit
+	url = git@github.com:esneider/YUNOcommit.vim.git
+[submodule "bundle/dash"]
+	path = bundle/dash
+	url = https://github.com/rizzatti/dash.vim.git
+[submodule "bundle/jinja"]
+	path = bundle/jinja
+	url = https://github.com/lepture/vim-jinja.git
+[submodule "bundle/json"]
+	path = bundle/json
+	url = git@github.com:leshill/vim-json.git

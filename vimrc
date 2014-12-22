@@ -27,7 +27,7 @@ set ignorecase		" Do case insensitive matching
 "set incsearch		" Incremental search
 "set autowrite		" Automatically save before commands like :next and :make
 "set hidden             " Hide buffers when they are abandoned
-"set mouse=a		" Enable mouse usage (all modes)
+set mouse=a		" Enable mouse usage (all modes)
 
 " Source a global configuration file if available
 if filereadable("/etc/vim/vimrc.local")
@@ -51,11 +51,19 @@ let g:gist_detect_filetype = 1
 "Tagbar
 nmap <LEADER>l :TagbarToggle<CR>
 
+"Configure ctags to use Homebrew
+let g:tagbar_ctags_bin='/usr/local/bin/ctags'
+
+let g:tagbar_width=26 
+
 "NERDTree
 nmap <LEADER>N :NERDTree<CR>
 
 "Slime
 let g:slime_target = "tmux"
+
+"You Complete Me
+let g:ycm_path_to_python_interpreter = '/usr/local/bin/python2'
 
 " Some Nice Snippets from: https://github.com/amix/vimrc
 " --
@@ -73,6 +81,10 @@ map <leader>tc :tabclose<cr>
 map <leader>tm :tabmove<CR>
 map <leader>tn :tabnext<CR>
 map <leader>tp :tabp<CR>
+
+" Make moving around move between wrapped lines
+nnoremap j gj
+nnoremap k gk
 
 " Toggle paste mode on and off
 map <leader>pp :setlocal paste!<cr>
