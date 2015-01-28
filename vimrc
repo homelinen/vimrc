@@ -63,7 +63,7 @@ nmap <LEADER>N :NERDTree<CR>
 let g:slime_target = "tmux"
 
 "You Complete Me
-let g:ycm_path_to_python_interpreter = '/usr/local/bin/python2'
+let g:ycm_path_to_python_interpreter = '/usr/bin/python'
 
 " Some Nice Snippets from: https://github.com/amix/vimrc
 " --
