@@ -82,3 +82,6 @@
 [submodule "bundle/YouCompleteMe"]
 	path = bundle/YouCompleteMe
 	url = git@github.com:Valloric/YouCompleteMe.git
+[submodule "bundle/yaml-vim"]
+	path = bundle/yaml-vim
+	url = git@github.com:ingydotnet/yaml-vim.git
