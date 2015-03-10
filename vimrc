@@ -94,6 +94,10 @@ noremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
 
 "-- EOF Snippets
 
+"Add visible tabs
+set list
+set listchars=tab:\|\ 
+
 map YY :!xclip -f -sel clip<CR>
 
 "Shows line numbers in the left column
@@ -117,7 +121,7 @@ set history=700
 set ai "Auto indent
 set si "Smart indent
 
-"What is you?
+"Break lines that are too long
 set lbr
 
 set wildmenu "Turn on wildmenu
@@ -133,7 +137,7 @@ syntax enable
 " Syntastic 
 
 " Use pyflakes for a tiny speed bump over pylint
-let g:syntastic_python_checkers = ['python', 'pyflakes']
+let g:syntastic_python_checkers = ['python', 'pyflakes', 'flake8']
 
 set magic
 
