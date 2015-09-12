@@ -13,9 +13,6 @@
 [submodule "bundle/vim-coffee-script"]
 	path = bundle/vim-coffee-script
 	url = https://github.com/kchmck/vim-coffee-script.git
-[submodule "bundle/snipmate"]
-	path = bundle/snipmate
-	url = https://github.com/msanders/snipmate.vim.git
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
@@ -94,3 +91,24 @@
 [submodule "bundle/go"]
 	path = bundle/go
 	url = git@github.com:fatih/vim-go.git
+[submodule "bundle/tomorrow-theme"]
+	path = bundle/tomorrow-theme
+	url = https://github.com/chriskempson/vim-tomorrow-theme
+[submodule "bundle/ruby"]
+	path = bundle/ruby
+	url = git@github.com:vim-ruby/vim-ruby.git
+[submodule "bundle/unite"]
+	path = bundle/unite
+	url = git@github.com:Shougo/unite.vim.git
+[submodule "bundle/ctrlp"]
+	path = bundle/ctrlp
+	url = https://github.com/kien/ctrlp.vim.git
+[submodule "bundle/nginx-vim-syntax"]
+	path = bundle/nginx-vim-syntax
+	url = git@github.com:evanmiller/nginx-vim-syntax.git
+[submodule "bundle/snippets"]
+	path = bundle/snippets
+	url = https://github.com/honza/vim-snippets.git
+[submodule "bundle/utilsnips"]
+	path = bundle/utilsnips
+	url = https://github.com/SirVer/ultisnips.git

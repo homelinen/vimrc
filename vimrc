@@ -51,6 +51,10 @@ let g:gist_detect_filetype = 1
 "Tagbar
 nmap <LEADER>l :TagbarToggle<CR>
 
+"Tabularize
+vmap <Leader>ad :Tabularize /^[^=]*\zs=><CR> " Tab 
+nmap <Leader>ad :Tabularize /^[^=]*\zs=><CR>
+
 "Configure ctags to use Homebrew
 let g:tagbar_ctags_bin='/usr/local/bin/ctags'
 
@@ -64,6 +68,19 @@ let g:slime_target = "tmux"
 
 "You Complete Me
 let g:ycm_path_to_python_interpreter = '/usr/bin/python'
+let g:ycm_collect_identifiers_from_tags_files = 1
+let g:ycm_seed_identifiers_with_syntax = 1
+let g:ycm_use_ultisnips_completer = 1
+
+" make YCM compatible with UltiSnips (using supertab)
+let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+let g:SuperTabDefaultCompletionType = '<C-n>'
+
+" better key bindings for UltiSnipsExpandTrigger
+let g:UltiSnipsExpandTrigger = "<tab>"
+let g:UltiSnipsJumpForwardTrigger = "<tab>"
+let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 
 " Some Nice Snippets from: https://github.com/amix/vimrc
 " --
