@@ -112,3 +112,6 @@
 [submodule "bundle/utilsnips"]
 	path = bundle/utilsnips
 	url = https://github.com/SirVer/ultisnips.git
+[submodule "bundle/gitgutter"]
+	path = bundle/gitgutter
+	url = https://github.com/airblade/vim-gitgutter.git
