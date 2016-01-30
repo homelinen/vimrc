@@ -85,9 +85,6 @@
 [submodule "bundle/yaml-vim"]
 	path = bundle/yaml-vim
 	url = git@github.com:ingydotnet/yaml-vim.git
-[submodule "bundle/excel"]
-	path = bundle/excel
-	url = git@github.com:yakiang/excel.vim.git
 [submodule "bundle/go"]
 	path = bundle/go
 	url = git@github.com:fatih/vim-go.git
